@@ -1,0 +1,33 @@
+{
+  "name": "vue-details",
+  "private": true,
+  "version": "0.0.0",
+  "author": "Victor Zaporojan",
+  "description": "Vue 3 <details> component",
+  "files": ["dist"],
+  "main": "./dist/vuedetails.cjs",
+  "module": "./dist/vuedetails.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vuedetails.js",
+      "require": "./dist/vuedetails.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.21.2",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5",
+    "vite": "^2.8.0",
+    "vite-plugin-dts": "^2.0.2",
+    "vue-tsc": "^1.2.0"
+  }
+}
