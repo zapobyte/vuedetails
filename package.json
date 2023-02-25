@@ -1,6 +1,6 @@
 {
   "name": "vue3details",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Victor Zaporojan",
   "description": "Vue 3 <details> component",
   "files": [
