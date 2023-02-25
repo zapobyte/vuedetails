@@ -1,10 +1,10 @@
 import type { App } from 'vue';
-import VueDetails from './components';
+import Vue3Details from './components';
 
 export default {
   install: (app: App) => {
-    app.component('vue-details', VueDetails);
+    app.component('vue3details', Vue3Details);
   }
 };
 
-export { VueDetails };
+export { Vue3Details };

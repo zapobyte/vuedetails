@@ -1,3 +1,3 @@
-import VueDetailsVue from "./VueDetails.vue";
+import Vue3Details from "./Vue3Details.vue";
 
-export default VueDetailsVue;
+export default Vue3Details;

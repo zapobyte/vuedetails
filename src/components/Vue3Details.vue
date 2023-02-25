@@ -8,6 +8,7 @@
 import { ref, computed, PropType, defineComponent  } from 'vue';
 
 export default defineComponent({
+  name: 'Vue3Details',
   props:{
     modelValue: {
       type: Boolean as PropType<boolean>,

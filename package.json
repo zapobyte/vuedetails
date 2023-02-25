@@ -1,16 +1,15 @@
 {
-  "name": "vue-details",
-  "private": true,
+  "name": "vue3details",
   "version": "0.0.0",
   "author": "Victor Zaporojan",
   "description": "Vue 3 <details> component",
   "files": ["dist"],
-  "main": "./dist/vuedetails.cjs",
-  "module": "./dist/vuedetails.js",
+  "main": "./dist/vue3details.umd.js",
+  "module": "./dist/vue3details.es.js",
   "exports": {
     ".": {
-      "import": "./dist/vuedetails.js",
-      "require": "./dist/vuedetails.umd.cjs"
+      "import": "./dist/vue3details.es.js",
+      "require": "./dist/vue3details.umd.js"
     }
   },
   "scripts": {

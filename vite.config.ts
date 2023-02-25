@@ -12,11 +12,8 @@ export default defineConfig({
       // Set the entry point (file that contains our components exported).
       entry: './src/main.ts',
       // Name of the library.
-      name: 'vuedetails',
-      // We are building for CJS and ESM, use a function to rename automatically files.
-      // Example: my-component-library.esm.js
-      // fileName: (format) => `${'vuedetails'}.${format}.js`,
-      fileName: 'vuedetails',
+      name: 'vue3details',
+      fileName: 'vue3details',
     },
     rollupOptions: {
       external: ["vue"],
