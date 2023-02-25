@@ -68,7 +68,7 @@ describe('Vue3Details Test Suite', () => {
     wrapper.find('details').trigger('click');
 
     expect(wrapper.emitted('update:modelValue')).toHaveLength(3);
-    const emmited: any[] = wrapper.emitted('update:modelValue') as any[];
+    const emmited = wrapper.emitted('update:modelValue') as string[];
     expect(emmited[0][0]).toBe(true);
     expect(emmited[1][0]).toBe(false);
     expect(emmited[2][0]).toBe(true);

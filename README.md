@@ -16,7 +16,7 @@ To install this package, you can use npm or yarn:
 
 ### Usage
 
-To use the <details> element provided by this package, you can import it in your Vue 3 component and use it as follows:
+To use the `<vue3details>` element provided by this package, you can import it in your Vue 3 component and use it as follows:
 
 Import into your main file:
 
