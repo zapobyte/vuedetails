@@ -32,7 +32,7 @@ app.use(Vue3Details);
 and use as:
 
 ```
-   <Vue3Details v-model="true">
+   <Vue3Details open="isOpen" @open="(e)=> isOpen = e">
     <summary>Title</summary>
     <p>Details content goes here.</p>
    </Vue3Details>

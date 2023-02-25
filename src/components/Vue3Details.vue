@@ -1,5 +1,5 @@
 <template>
-  <details id="vue3details" :open="modelValue" @click="toggleElement">
+  <details id="vue3details" :open="isOpen" @click="toggleElement">
     <slot></slot>
   </details>
 </template>
@@ -10,14 +10,14 @@ import { ref, computed, PropType, defineComponent  } from 'vue';
 export default defineComponent({
   name: 'Vue3Details',
   props:{
-    modelValue: {
+    open: {
       type: Boolean as PropType<boolean>,
       default: false,
     },
   },
-  emits: ['update:modelValue'],
-  setup(props, { emit }: any) {
-    const openProp = ref<boolean>(props.modelValue);
+  emits: ['open'],
+  setup(props, { emit }) {
+    const openProp = ref<boolean>(props.open);
 
     const isOpen = computed((): boolean => {
       return openProp.value;
@@ -25,7 +25,7 @@ export default defineComponent({
 
     const toggleElement = (): void => {
       openProp.value = !openProp.value;
-      emit('update:modelValue', openProp.value);
+      emit('open', isOpen.value);
     };
 
     return {
