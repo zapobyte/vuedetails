@@ -1,5 +1,5 @@
 <template>
-  <details :class="classList" id="vue-details" :open="modelValue" @click="toggleElement">
+  <details id="vue3details" :open="modelValue" @click="toggleElement">
     <slot></slot>
   </details>
 </template>
@@ -14,12 +14,8 @@ export default defineComponent({
       type: Boolean as PropType<boolean>,
       default: false,
     },
-    classes: {
-      type: Array as PropType<string[]>,
-      default: []
-    }
   },
-  emits: ['click'],
+  emits: ['update:modelValue'],
   setup(props, { emit }: any) {
     const openProp = ref<boolean>(props.modelValue);
 
@@ -27,16 +23,12 @@ export default defineComponent({
       return openProp.value;
     });
 
-    const classList = computed(() : string[] => {
-      return props.classes;
-    });
     const toggleElement = (): void => {
       openProp.value = !openProp.value;
-      emit('click');
+      emit('update:modelValue', openProp.value);
     };
 
     return {
-      classList,
       isOpen,
       toggleElement
     }

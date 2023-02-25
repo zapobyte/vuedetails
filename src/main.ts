@@ -6,5 +6,3 @@ export default {
     app.component('vue3details', Vue3Details);
   }
 };
-
-export { Vue3Details };
