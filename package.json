@@ -1,9 +1,11 @@
 {
   "name": "vue3details",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Victor Zaporojan",
   "description": "Vue 3 <details> component",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue3details.umd.js",
   "module": "./dist/vue3details.es.js",
   "exports": {
