@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "author": "Victor Zaporojan",
   "description": "Vue 3 <details> component",
+  "homepage": "https://github.com/zapobyte/vuedetails",
   "files": [
     "dist"
   ],
